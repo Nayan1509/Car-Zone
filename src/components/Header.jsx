@@ -20,8 +20,6 @@ const Header = () => {
 
   return (
     <header className="w-full bg-white shadow">
-      
-
       {/* Header Middle */}
       <div className="py-4 border-b">
         <div className="container mx-auto flex flex-wrap justify-between items-center px-4">
@@ -55,11 +53,8 @@ const Header = () => {
       </div>
 
       {/* Navigation */}
-      <div className="bg-gray-100">
+      <div className="bg-slate-900">
         <div className="container mx-auto flex justify-between items-center px-4 py-3">
-          <span className="text-2xl sm:hidden cursor-pointer" onClick={toggleMenu}>
-            <i className="ri-menu-line"></i>
-          </span>
 
           <nav ref={menuRef} className="hidden sm:flex gap-6 items-center">
             {navLinks.map((item, index) => (
@@ -69,7 +64,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "text-blue-600 font-semibold"
-                    : "text-gray-800 hover:text-blue-600"
+                    : "text-white hover:text-blue-600"
                 }
               >
                 {item.display}
@@ -81,11 +76,8 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search"
-              className="px-3 py-1 outline-none text-sm"
+              className="px-3 py-1 outline-none text-sm text-white"
             />
-            <span className="px-2 bg-white">
-              <i className="ri-search-line text-gray-600"></i>
-            </span>
           </div>
         </div>
       </div>
