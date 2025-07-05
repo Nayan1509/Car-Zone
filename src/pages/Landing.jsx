@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 export default function Landing() {
   return (
     <div className=" bg-slate-500 text-white flex flex-col">
-      <section className="py-16 text-center">
+      <section className="py-16 text-center min-h-screen">
         <h1 className="text-5xl font-bold mb-4">Welcome to CarZone</h1>
         <p className="text-xl mb-6">Explore premium cars from top brands</p>
       </section>
